@@ -6,7 +6,16 @@ project(renshu)
 
 # --------------------------------------
 # add library
-add_library(greetings hello.cc good_morning.cc)
+
+# libgreetings .........................
+option(GREETINGS_BUILD_SHARED_LIBS "build greetings as a shared library" OFF)
+if(GREETINGS_BUILD_SHARED_LIBS)
+add_library(greetings SHARED hello.cc good_morning.cc)
+else()
+add_library(greetings STATIC hello.cc good_morning.cc)
+endif()
+# ......................................
+
 # --------------------------------------
 
 # --------------------------------------
