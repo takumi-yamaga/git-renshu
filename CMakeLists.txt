@@ -6,7 +6,7 @@ project(renshu)
 
 # --------------------------------------
 # add subdirectory
-add_subdirectory(greetings-src)
+add_subdirectory(lib-greetins)
 # --------------------------------------
 
 # --------------------------------------
