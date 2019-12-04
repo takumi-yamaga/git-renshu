@@ -5,22 +5,13 @@ project(renshu)
 # --------------------------------------
 
 # --------------------------------------
-# add library
-
-# libgreetings .........................
-option(GREETINGS_BUILD_SHARED_LIBS "build greetings as a shared library" OFF)
-if(GREETINGS_BUILD_SHARED_LIBS)
-add_library(greetings SHARED hello.cc good_morning.cc)
-else()
-add_library(greetings STATIC hello.cc good_morning.cc)
-endif()
-# ......................................
-
+# add subdirectory
+add_subdirectory(greetings-src)
 # --------------------------------------
 
 # --------------------------------------
 # add the executable
-add_executable(renshu renshu.cc hello.cc)
+add_executable(renshu renshu.cc)
 target_link_libraries(renshu greetings)
 # --------------------------------------
 
