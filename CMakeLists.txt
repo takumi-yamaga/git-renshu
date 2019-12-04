@@ -5,13 +5,13 @@ project(renshu)
 # --------------------------------------
 
 # --------------------------------------
-# add library
-add_library(greetings hello.cc good_morning.cc)
+# add subdirectory
+add_subdirectory(greetings-src)
 # --------------------------------------
 
 # --------------------------------------
 # add the executable
-add_executable(renshu renshu.cc hello.cc)
+add_executable(renshu renshu.cc)
 target_link_libraries(renshu greetings)
 # --------------------------------------
 
