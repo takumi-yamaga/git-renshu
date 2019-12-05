@@ -1,7 +1,7 @@
 # --------------------------------------
 # setup the project
 cmake_minimum_required(VERSION 3.15 FATAL_ERROR)
-project(renshu CXX)
+project(renshu-ver.1.0.0 CXX)
 # --------------------------------------
 
 # --------------------------------------
