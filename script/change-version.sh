@@ -15,4 +15,4 @@ elif [ $# -gt 1 ]; then
 	echo "These inputs will be ignored."
 fi
 
-sed -i '' -E "s/ver\..*\..*\..*/ver\.$1/g" renshu.cc
+sed -i '' -E "s/ver\..*\..*\..* /ver\.$1 /g" renshu.cc
